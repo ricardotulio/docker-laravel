@@ -7,7 +7,7 @@ RUN apt-get update && \
 
 RUN docker-php-ext-install pgsql \
         pdo \
-        pgsql \
+        pdo_pgsql \
         bcmath
 
 CMD ["php-fpm"]
